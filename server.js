@@ -4,8 +4,8 @@ require("dotenv").config();
 const port = process.env.PORT || 5000; 
 const routes = require ("./routes/products");
 // const connectDB = require("../server/db/connect")
-const connectDB = require ( "../server/db/connect");
-// import { connectDB } from "../server/db/connect";
+const connectDB = require ("./db/connect");
+// import connectDB from "./db/connect";
 const cors = require("cors");
 
 // to parse in json 
