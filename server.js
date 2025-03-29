@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 5000; 
 const routes = require ("./routes/products");
 const connectDB = require("../server/db/connect")
 // import { connectDB } from "../server/db/connect";
@@ -10,7 +10,7 @@ const cors = require("cors");
 // to parse in json 
 app.use(express.json());
 // for local host compatibility
-app.use(cors());
+app.use(cors( ));
 
 // to get data on server 
 app.get("/", (req, res) => {
